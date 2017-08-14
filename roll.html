@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数字逐一停止</title>
+    <script type="text/javascript" src="../roll/jquery-1.8.3.js"></script>
+    <style>
+        #demo {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="box">6000</span>
+    <button onclick="myFunction()">点击</button>
+
+    <script>
+        function myFunction() {
+            function sub() {
+                // var x = 6000;
+                var myBox = document.getElementById('box');
+                // myBox.innerHTML = x;
+                while (myBox.innerHTML > 2344) {
+                    myBox.innerHTML -= 1;
+                }
+            }
+            setInterval(sub, 1000);
+        }
+    </script>
+
+
+</body>
+
+</html>
